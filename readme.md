@@ -1,0 +1,1 @@
+A sample project of an event/ticketing system
