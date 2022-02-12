@@ -1,0 +1,115 @@
+:root {
+    --Poppins-font: "poppins", cursive;
+    --Rubik-font: "Rubik", cursive;
+    --orange-theme: #d1410c;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .container-fluid a.navbar-brand {
+    padding: 15px 10px 15px 10px;
+    color: var(--orange-theme);
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+.navbar .container-fluid .navbar-collapse .d-flex .search-header {
+    background: #F8F7FA;
+    border: none;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    min-width: 434px;
+}
+
+.navbar .container-fluid .navbar-collapse .d-flex .search-header::placeholder {
+    color: #D5D4DA;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item {
+    padding: 0 15px 0 15px;
+
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item .dropdown .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: #39364F;
+}
+
+
+.navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: #39364F;
+}
+
+.navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item .exception {
+    font-size: 12px;
+    font-weight: 700;
+    color: #3D64FF;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #fefefe;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .container-fluid .container-bg {
+    background-image: url('../images/container-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 398px;
+}
+
+header .container-fluid .container-bg .bg-splash #home-header-text_svg {
+    max-height: 220px;
+    display: block;
+    margin: 70px 10px 10px 50px;
+
+}
+
+header .container-fluid .container-bg .bg-splash a {
+    max-height: 200px;
+    color: #fff;
+    background-color: var(--orange-theme);
+    border-color: var(--orange-theme);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px 10px 10px 50px;
+}
