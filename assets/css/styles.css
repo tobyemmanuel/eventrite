@@ -37,6 +37,11 @@ section {
     font-weight: 700;
     min-width: 475px;
     padding-left: 50px;
+    outline: none;
+}
+
+.navbar .container-fluid .navbar-collapse .d-flex .search-header:focus {
+    outline: none;
 }
 
 .navbar .container-fluid .navbar-collapse .d-flex .search-header::placeholder {
@@ -73,7 +78,7 @@ section {
 .navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item .exception {
     font-size: 12px;
     font-weight: 700;
-    color: #3D64FF;
+    color: #3659e3;
 
 }
 
@@ -115,7 +120,6 @@ header .container-fluid .container-bg {
 
 header .container-fluid .container-bg .bg-splash #home-header-text_svg {
     max-height: 220px;
-    height: 100%;
     display: block;
     margin: 70px 10px 10px 50px;
 
@@ -131,33 +135,201 @@ header .container-fluid .container-bg .bg-splash a {
     margin: 10px 10px 10px 50px;
 }
 
-.section-notification .container-fluid .row .notification .notify-message {
+.section-one .container-fluid .row .notification .notify-message {
     margin-top: 30px;
-    padding: 15px 0px 1px 20px;
+    padding: 15px 6px 1px 20px;
     border-left: 4px solid var(--orange-theme);
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width: 93%;
+    width: 94%;
 }
 
-.section-notification .container-fluid .row .notification .notify-message h5 {
+.section-one .container-fluid .row .notification .notify-message h5 {
     font-size: 18px;
     font-weight: 600;
 }
 
-.section-notification .container-fluid .row .notification .notify-message p {
+.section-one .container-fluid .row .notification .notify-message p {
     font-size: 14px;
     font-weight: 500;
 }
 
-.section-notification .container-fluid .row .col-md-12 h1 {
+.section-one .container-fluid .row .col-md-12 h1 {
     font-size: 40px;
     font-weight: 900;
 }
 
-.section-notification {
-    margin-bottom: 50px;
+.section-one .container-fluid .row .col-md-12 {
+    margin-top: 30px;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 i {
+    font-size: 22px;
+    color: #3659e3;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 #input {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3659e3;
+    opacity: 100%;
+    border-bottom: 2px solid #D5D4DA;
+    outline: none;
+    min-width: 50px;
+    padding-right: 5px;
+    transition: padding 200ms;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 #input:empty:before {
+    content: "Kaduna";
+    color: #3659e3;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 #input:empty:focus:before {
+    color: #D5D4DA;
+}
+
+.section-one .container-fluid .row .col-md-12 .h1 #input:focus {
+    padding-bottom: 3px;
+
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav {
+    font-size: 14px;
+    font-weight: 700;
+    overflow-x: auto;
+
+
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav li.nav-item {
+    color: #a0a0a0;
+    padding: 10px 20px;
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav li.nav-item:first-child {
+    padding: 10px 20px 10px 0px;
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav li.nav-item a {
+    color: #a0a0a0;
+    padding: 0 0 7px 0;
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav li.nav-item a.active {
+    color: #3659e3;
+    border-bottom: 2px solid #3659e3;
+}
+
+.section-one .container-fluid .row .col-md-12 ul.nav li.nav-item a:not(.active):hover {
+    color: #1E0A3C;
+    border-bottom: 2px solid #1E0A3C;
+}
+
+.section-one .container-fluid .row .col-md-12 .events-list-heading {
+    color: #1E0A3C;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card {
+    border: none;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card:not(.event-info) {
+    border: none;
+    box-shadow: 0px 1px 8px 0.2px rgba(61, 61, 61, 0.2);
+    transition: box-shadow 200ms;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card:not(.event-info):hover {
+    box-shadow: 0px 0px 50px 2px rgba(61, 61, 61, 0.2);
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body .card-title {
+    color: #39364f;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body h6.text-time {
+    color: #f05537;
+    font-weight: 600;
+    font-size: .875rem;
+    margin: 10px 0;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body h6.text-address {
+    color: #6f7287;
+    font-weight: 400;
+    font-size: .875rem;
+    margin: 10px 0;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body h6.text-price {
+    color: #6f7287;
+    font-weight: 400;
+    font-size: .875rem;
+    margin: 10px 0;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body p.text-creator {
+    color: #39364f;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .card .card-body p.text-traction {
+    color: #39364f;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .event-info .card-body h5.card-title {
+    color: #39364f;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .event-info .card-body p.card-text {
+    color: #39364f;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .event-info {
+    background-color: #ECDCE6;
+}
+
+.section-one .container-fluid .events-group .col-md-3 .event-info .card-img-overlay a {
+    max-height: 200px;
+    color: #fff;
+    background-color: var(--orange-theme);
+    border-color: var(--orange-theme);
+    font-weight: 600;
+    font-size: 14px;
+    top: 100px;
     position: relative;
+    padding: 10px 20px;
+}
+
+.section-one .container-fluid .row .col-md-12 .d-grid button {
+    color: #595b6b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn.btn-outline-gray {
+    border: 2px solid rgb(177, 177, 177);
 }
 
 footer {
