@@ -245,6 +245,7 @@ header .container-fluid .container-bg .bg-splash a {
 
 .section-one .container-fluid .events-group .col-md-3 .card {
     border: none;
+    position: relative;
 }
 
 .section-one .container-fluid .events-group .col-md-3 .card:not(.event-info) {
@@ -298,6 +299,8 @@ header .container-fluid .container-bg .bg-splash a {
     font-size: .875rem;
 }
 
+
+
 .section-one .container-fluid .events-group .col-md-3 .event-info .card-body h5.card-title {
     color: #39364f;
     font-weight: 600;
@@ -330,6 +333,27 @@ header .container-fluid .container-bg .bg-splash a {
 .section-one .container-fluid .events-group .col-md-3 .event-info .card-img-overlay a:hover {
     background-color: #f05537;
 }
+
+.section-one .container-fluid .events-group .col-md-3 .card:not(.event-info) .card-img-overlay a {
+
+    color: #595b6b;
+    background-color: #fff;
+    border: 1px solid #dbdae3;
+    font-weight: 800;
+    font-size: 16px;
+    top: 120px;
+    position: absolute;
+    border-radius: 100px;
+    padding: 5px 10px 5px 10px;
+    width: min-content;
+    left: 80%;
+}
+
+
+.section-one .container-fluid .events-group .col-md-3 .card:not(.event-info) .card-img-overlay a:hover {
+    background-color: #dbdae3;
+}
+
 
 .section-one .container-fluid .row .col-md-12 .d-grid button {
     color: #595b6b;
@@ -470,6 +494,115 @@ main.login .container-fluid .row .col-md-6 div form .form-label.text:focus-withi
 
 main.login .container-fluid .row .login-bg {
     background: url(../images/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* signup section */
+
+main.signup .container-fluid .row .col-md-6 div h1 {
+    padding: 0px 10px 1px 0px;
+    color: var(--orange-theme);
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+main.signup .container-fluid .row .col-md-6 div h2 {
+    padding: 0px 10px 15px 0px;
+    color: #1E0A3C;
+    font-weight: 700;
+    font-size: 3.25rem;
+
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid a {
+    text-decoration: none;
+    color: #3659e3;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 20px;
+    display: block;
+    min-width: 400px;
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid a:hover {
+    background: #F8F7FA;
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid a.login-alt:first-of-type {
+    margin-top: 2px;
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid a.login-alt:last-of-type {
+    margin-top: 15px;
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid h6 {
+    margin: 10px 0 20px;
+    width: 360px;
+    text-align: center;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    line-height: 0.01em;
+
+}
+
+main.signup .container-fluid .row .col-md-6 .d-grid h6 span {
+    background: #fff;
+    padding: 0 10px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #39364f;
+}
+
+main.signup .container-fluid .row .col-md-6 div form .form-label.text {
+    width: min-content;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 2px;
+}
+
+main.signup .container-fluid .row .col-md-6 div form .form-label.text input {
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 350px;
+    outline: none;
+    color: rgb(87, 87, 87);
+    margin: 0 5px 3px 5px;
+    border: none;
+}
+
+main.signup .container-fluid .row .col-md-6 div form .form-label.text:focus-within {
+    color: #3659e3;
+    border: 2px solid #3659e3;
+    height: auto;
+}
+
+.signup-frontend .submit-container .submit {
+    max-height: 200px;
+    color: #fff;
+    background-color: var(--orange-theme);
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    min-width: 360px;
+    margin: 8px 0px;
+}
+
+.signup-frontend .submit-container .submit:hover {
+    background-color: #f05537;
+}
+
+
+main.signup .container-fluid .row .signup-bg {
+    background: url(../images/signup.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
