@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 header,
 section {
     overflow-x: hidden;
@@ -16,6 +17,7 @@ section {
 
 .navbar {
     padding: 0;
+
 }
 
 .navbar .container-fluid a.navbar-brand {
@@ -57,6 +59,7 @@ section {
 
 }
 
+
 .navbar .container-fluid .navbar-collapse .navbar-nav li.nav-item .dropdown .nav-link {
     font-size: 12px;
     font-weight: 700;
@@ -88,10 +91,9 @@ section {
     background: white;
     min-width: 250px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 1000;
     right: 0px;
 }
-
 
 .dropdown-content a {
     color: #919094;
@@ -135,9 +137,11 @@ header .container-fluid .container-bg .bg-splash a {
     margin: 10px 10px 10px 50px;
 }
 
-.section-one {
+.section {
     margin-bottom: 30px;
 }
+
+
 
 .section-one .container-fluid .row .notification .notify-message {
     margin-top: 30px;
@@ -607,6 +611,198 @@ main.signup .container-fluid .row .signup-bg {
     background-position: center;
 }
 
+/*event*/
+
+.section-event .container-fluid .row .event-details .row {
+
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 1px 1px #a0a0a0;
+}
+
+.section-event .container-fluid .row .event-details .row .event-date-details {
+    background: #EAE9ED;
+    padding: 30px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-date-details .event-month,
+.event-date {
+    margin-bottom: 30px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-date-details .event-month,
+.event-day {
+    line-height: 1.2em;
+    margin-bottom: 0px;
+
+}
+
+.section-event .container-fluid .row .event-details .row .event-date-details .event-month {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-event .container-fluid .row .event-details .row .event-date-details .event-day {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two {
+    font-size: .9333333333rem;
+    line-height: 1.25rem;
+    color: #6F7287;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two h1 {
+    margin: 0 auto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #1E0A3C;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: .5px;
+    word-break: break-word;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two .event-creator {
+    display: block;
+    margin-top: 12px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two .event-creator a {
+    color: #16319d;
+    text-decoration: none;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two .event-followership {
+    display: block;
+    margin-top: 5px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two .event-followership button {
+    background: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 6px;
+    border: 2px solid #3d64ff;
+    color: #3d64ff;
+}
+
+.section-event .container-fluid .row .event-details .row .event-details-two .ticket-price {
+    display: block;
+    margin-top: 120px;
+}
+
+.section-event .container-fluid .row .event-details .row .col-actions {
+    padding: 10px 15px;
+}
+
+.section-event .container-fluid .row .event-details .row .col-actions i {
+    margin: 15px;
+    font: 14px;
+
+}
+
+.section-event .container-fluid .row .event-details .row .col-actions button {
+    padding: 10px 130px;
+    font: 14px;
+    font-weight: 600;
+}
+
+.section-event .container-fluid .row .event-details .row .event-description {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.section-event .container-fluid .row .event-details .row .event-description .event-desc-text {
+    margin-bottom: 50px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-description h3 {
+    color: #1E0A3C;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section-event .container-fluid .row .event-details .row .event-description .social-share i {
+    width: 24px;
+    height: 24px;
+    padding: 0px 15px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-desc-dates h3 {
+    color: #1E0A3C;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.section-event .container-fluid .row .event-details .row .event-desc-dates h3:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.section-event .container-fluid .row .event-details .row .event-desc-dates p {
+    font-size: .9333333333rem;
+    line-height: 1.25rem;
+    letter-spacing: .5px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.section-event .container-fluid .row .event-details .row .event-desc-dates p a {
+    text-decoration: none;
+    color: #16319d;
+}
+
+.section-event .container-fluid .row .other-details img {
+    padding-bottom: 5px;
+}
+
+.section-event .container-fluid .row .other-details a {
+    padding-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #16319d;
+}
+
+.section-event .container-fluid .row .other-details span {
+    color: #1E0A3C;
+    font-size: .9333333333rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding: 10px 0px;
+    letter-spacing: .25px;
+    display: block;
+}
+
+.section-event .container-fluid .row .other-details p {
+    color: #6F7287;
+    word-wrap: break-word;
+    font-size: .9333333333rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding: 0 100px;
+
+}
+
+.section-event .container-fluid .row .other-details button {
+    padding: 10px 20px;
+}
+
+.section-event .container-fluid .row .other-details button.view-map {
+    display: block;
+    margin-top: 50px;
+    border: 2px solid #919094;
+    color: #595b6b;
+    font-weight: 500;
+}
 
 /* footer */
 footer {
