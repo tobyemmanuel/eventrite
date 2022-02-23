@@ -720,6 +720,7 @@ main.signup .container-fluid .row .signup-bg {
 }
 
 .section-event .container-fluid .row .event-details .row .event-description .event-desc-text {
+    padding: 0 50px;
     margin-bottom: 50px;
 }
 
