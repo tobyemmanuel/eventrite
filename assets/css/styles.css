@@ -805,6 +805,10 @@ main.signup .container-fluid .row .signup-bg {
     font-weight: 500;
 }
 
+.section-event .container-fluid .row .other-details button.view-map:hover {
+    background: #f5f5f5;
+}
+
 /* footer */
 footer {
     background: #1E0A3C;
